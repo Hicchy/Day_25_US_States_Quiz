@@ -1,12 +1,10 @@
 import turtle
 import pandas
 
-
 screen = turtle.Screen()
 screen.title("U.S. States Game")
 image = "blank_states_img.gif"
 screen.addshape(image)
-
 turtle.shape(image)
 
 
@@ -19,6 +17,7 @@ text.hideturtle()
 text.penup()
 numCorrect = 0
 isOn = True
+
 
 while isOn:
     answer = screen.textinput(f"Guess the State {numCorrect}/50", "What's another State?:").title()
@@ -36,11 +35,3 @@ while isOn:
             if numCorrect == 1:
                 print("You win!")
                 isOn = False
-
-
-
-
-
-
-
-
