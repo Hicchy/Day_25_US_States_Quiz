@@ -32,6 +32,6 @@ while isOn:
             text.setposition(stateX, stateY)
             text.write(answer)
             numCorrect += 1
-            if numCorrect == 1:
+            if numCorrect == 50:
                 print("You win!")
                 isOn = False
